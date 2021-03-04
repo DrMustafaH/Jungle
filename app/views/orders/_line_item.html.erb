@@ -1,0 +1,15 @@
+<% product = Product.find(product_id) %>
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+	@@ -11,4 +8,10 @@
+    <br>
+    <p><%= product.description %></p>
+  </td>
+  <td>
+    <p><%=quantity%></p>
+  </td>
+  <td>
+    <p><%=humanized_money_with_symbol total_line_price / 100.0%></p>
+  </td>
+</tr>
